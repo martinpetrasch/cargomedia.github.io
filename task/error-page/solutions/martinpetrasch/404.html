@@ -1,0 +1,41 @@
+---
+layout: default
+title: 404
+---
+
+<div class="bigStripe">
+	<h1 class="headline">404</h1>
+	<p class="catchphrase"></p>
+	<button onclick="location.href='http://www.cargomedia.ch/jobs'">we hire</button>
+</div>
+
+<script src="bower_components/jquery/jquery.min.js"></script>
+
+<script type="text/javascript">
+<!--
+	function SetCatchPhrase(){
+		if ($(window).width() <= 450) {
+			$('.catchphrase').html("Page not found!<br/>But maybe you're searching for something else?");
+		}else{
+			$('.catchphrase').html("Oops. The page you're looking for can't be found!<br/>Maybe you're searching for something else?");
+		}
+	}
+
+	
+	function SetContact(){
+		if ($(window).width() <= 450) {
+			$("address").find("br").remove();
+		}else{		
+			$("address").html('1');
+		}
+	}
+	$(window).on('resize', function (e) { 
+		SetCatchPhrase();
+		SetContact(); 
+
+	});
+
+	SetCatchPhrase();
+	SetContact();
+//-->
+</script>
